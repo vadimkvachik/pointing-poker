@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+    mongo:
+        build:
+            context: .
+        environment:
+            MONGO_INITDB_DATABASE: pointing-poker
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: root
+        ports:
+            - '27117:27017'
